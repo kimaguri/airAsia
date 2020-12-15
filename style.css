@@ -1,7 +1,9 @@
 body {
-    background: #031920;
+    background: #031920 url('./assets/1.png') center top no-repeat;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
     color: #fff;
     line-height: 1.42;
     -webkit-font-smoothing: antialiased;
@@ -10,6 +12,7 @@ body {
 
 a {
     color: inherit;
+    text-decoration: none;
 }
 
 ul {
@@ -36,16 +39,26 @@ p {
     margin: 0 auto;
 }
 
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding-top: 45px;
+    padding-top: 27px;
+    margin-bottom: 50px;
 }
 
 .header__col {
     display: flex;
     align-items: center;
+}
+
+.header__col-align-right {
+    justify-content: flex-end;
 }
 
 .logo {
@@ -54,14 +67,139 @@ p {
 }
 
 .logo__img {
-    width: 80px;
+    width: 85px;
 }
 
 .menu {
-    width: 350px;
 }
 
 .menu__item {
     display: inline-block;
     margin-right: 50px;
+    font-size: 14px;
 }
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contacts__phone {
+    font-size: 26px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contacts__title-dropdown {
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 340px;
+    width: 45%;
+}
+
+.main__title {
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.main__subtitle {
+    margin-top: 27px;
+    font-size: 18px;
+}
+
+.main__button {
+    margin-top: 33px;
+    width: 168px;
+    height: 55px;
+    border: 0;
+    border-radius: 35px;
+    background: #F5170E;
+}
+
+.section__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.offers {
+    margin-top: 245px;
+}
+
+.offer__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 21px;
+}
+
+.offers__title-img::after {
+    content: url('./assets/flame.png');;
+    width: 100px;
+    padding-left: 12px;
+}
+
+.offers__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.offers__item {
+    min-height: 450px;
+    width: calc(100% / 3 - 18px);
+    background: #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    color: #303030;
+}
+
+.offer__header {
+    border-radius: 5px 5px 0 0;
+}
+
+.offer__content {
+    margin: 30px 22px;
+}
+
+.option {
+    font-style: normal;
+    font-size: 16px;
+    color: #666666;
+}
+
+.option1::before {
+    content: url("./assets/calendar.jpg");
+    padding: 0 10px 0 0;
+    vertical-align: -30%;
+}
+
+.option2::before {
+    content: url("./assets/meal.jpg");
+    padding: 0 10px 0 28px;
+    vertical-align: -20%;
+}
+
+.offer__description {
+    font-size: 14px;
+    line-height: 21px;
+    margin: 24px 0;
+}
+
+.offer__button {
+    width: 135px;
+    height: 55px;
+    border: 1px solid #F5170E;
+    border-radius: 35px;
+    background: #FFFFFF;
+    color: #F5170E;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 19px;
+}
+
