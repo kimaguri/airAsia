@@ -49,6 +49,10 @@ p {
     margin: 0 auto;
 }
 
+.inner__wrapper {
+
+}
+
 .hero__container {
     display: flex;
     flex-direction: column;
@@ -515,3 +519,224 @@ p {
     margin: 60px 40px 0 0;
 }
 
+/* Testimonials */
+
+.testimonials {
+    color: black;
+    margin-top: 100px;
+}
+
+.testimonials__list {
+    column-count: 2;
+    column-gap: 30px;
+}
+
+.testimonials__item {
+    display: inline-flex;
+    flex-direction: column;
+    background: #F4F5F5;
+    border-radius: 5px;
+    padding: 31px;
+    max-width: 557px;
+    margin-bottom: 17px;
+}
+
+.testimonial__header {
+    display: flex;
+    margin-bottom: 27px;
+}
+
+.testimonial__header-info-tour {
+    min-width: 143px;
+    height: 37px;
+    border: none;
+    border-radius: 35px;
+    background: #B9EAE4;
+    text-align: center;
+    vertical-align: center;
+    font-size: 13px;
+    line-height: 18px;
+    color: #303030;
+    padding: 0 18px;
+}
+
+.testimonial__image {
+    margin-right: 22px;
+}
+
+.testimonial__header-info-fio {
+    font-size: 24px;
+    line-height: 42px;
+    font-weight: bold;
+    color: #1A1B1E;
+}
+
+.testimonial__header-info-fio::after {
+    content: url("./assets/vk-blue.png");
+    width: 30px;
+    height: 30px;
+    margin-left: 7px;
+    vertical-align: baseline;
+}
+
+.testimonial__title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 42px;
+    color: #1A1B1E;
+    margin-bottom: 13px;
+}
+
+.testimonial__text {
+    font-size: 16px;
+    line-height: 27px;
+    color: #818181;
+    margin-bottom: 49px;
+}
+
+.testimonial__date {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #1A1B1E;
+}
+
+.separator {
+    background: url("./assets/Rectangle.png") center no-repeat;
+    margin-top: 100px;
+}
+
+.separator__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 363px;
+}
+
+.separator__title {
+    font-size: 48px;
+    line-height: 65px;
+    font-weight: bold;
+}
+
+.separator__image {
+    align-self: flex-end;
+}
+
+.review__container {
+    height: 100%;
+}
+
+.review {
+    background: #F4F5F5;
+    color: #1A1B1E;
+    height: 800px;
+}
+
+.review__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 100%;
+    padding-top: 62px;
+    padding-bottom: 96px;
+}
+
+.review__form-title {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 65px;
+}
+
+.review__form-one-line-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review__form-input {
+    height: 65px;
+    border: 1px solid #F5170E;
+    border-radius: 5px;
+    flex: 1;
+    margin-right: 28px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+}
+.review__form-input:last-child {
+    height: 65px;
+    border: 1px solid #F5170E;
+    border-radius: 5px;
+    flex: 1;
+    margin-right: 0;
+}
+
+.review__form-tags {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tags__title {
+    font-size: 18px;
+    line-height: 25px;
+    color: #1A1B1E;
+    flex: 1;
+}
+.tags__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 2;
+    max-width: 730px;
+    justify-self: flex-end;
+}
+
+.tags__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 37px;
+    width: 132px;
+    border: 0;
+    border-radius: 35px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 18px;
+    background: #E7E7E7;
+    margin-right: 14px;
+    margin-bottom: 10px;
+}
+
+.tags__item:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.tags__item-checkbox{
+    display: none;
+}
+
+.review__form-buttons {
+   align-self: flex-end;
+}
+
+.btn {
+    height: 55px;
+    width: 168px;
+    border-radius: 35px;
+    border: 1px solid black;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 19px;
+}
+
+.btn-filled {
+    color: #FFFFFF;
+    background: #2B2B2B;
+    margin-right: 17px;
+}
+
+.btn-ok {
+    background: #F5170E;
+    color: #FFFFFF;
+    border: 1px solid #F5170E;
+}
